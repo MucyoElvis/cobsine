@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CoBsine</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="navimage">
+            <img src="images/header-bg.png">
+            <img src="images/logo.png" id="img2">
+        </div>
+        <div class="nav-links">			
+             <a href="index.html">HOME</a>
+             <a href="services.html">SERVICES</a>
+             <a href="blog.html">BLOG</a>
+             <a href="about.html">ABOUT</a>
+             <a href="events.html">EVENTS</a>
+             <a href="contact.html">CONTACT US</a>
+        </div>
+        <img src="images/toggle-icon1.png" id="img">
+    </div>
+    <div class="contact">
+          <h1>Get In Touch<span></span></h1>
+          <p>Its a long established fact that reader would be distracted</p>
+          <input type="text" placeholder="Full name" id="I1"> 
+           <input type="number" placeholder="Phone number" id="I2">
+            <input type="email" placeholder="Email " id="I3">
+             <input type="text" placeholder="Message" id="I4">
+             <a href="contact"><button>Send</button></a>
+    </div>
+    <div class="footer">
+        <div class="gridding">
+            <img src="images/map-icon.png">
+            <h3>Location</h3>
+            <h2>About</h2>
+              <p>There are many variations of passages <br>of lorem ipsum savailable,but the<br>majority have suffered alleteration <br>savailable,but the majority have<br> suffered alleteration.</p>
+        </div>
+         <div class="gridding">
+            <img src="images/call-icon.png">
+            <h3>call :01 1234567890</h3>
+            <h2>Service Link</h2>
+              <p>There are many variations of passages <br>of lorem ipsum savailable,but the<br>majority have suffered alleteration <br>savailable,but the majority have<br> suffered alleteration.</p>
+        </div>
+         <div class="gridding">
+            <img src="images/mail-icon.png">
+            <h3>demo@gmail.com</h3>
+            <h2>Subscribe</h2>
+              <p>There are many variations of passages <br>of lorem ipsum savailable,but the<br>majority have suffered alleteration <br>savailable,but the majority have<br> suffered alleteration.</p>
+        </div>
+        <p id="me">CopyRight 2023 All rights reserved. Mucyo Elvis</p>
+    </div>
+     <script>
+    var links = document.querySelector('.nav-links');
+    var img = document.getElementById("img");
+
+    links.style.top ="-20rem";
+    img.addEventListener("click",(event)=>{
+        if(links.style.top=="-20rem"){
+            links.style.top = "0";
+        }else{
+            links.style.top = "-20rem";
+        }
+
+    })
+</script>
+</body>
+</html>

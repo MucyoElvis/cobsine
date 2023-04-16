@@ -1,0 +1,1686 @@
+    /* home page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe';
+}
+body{
+    background-color: white; 
+}
+.nav{
+    overflow: hidden;
+}
+.navimage img{
+    width: 100%;
+    position: absolute;
+    pointer-events: none;
+}
+#img2{
+    width: 6.5rem;
+    padding-top: 1rem;
+    margin-left: 70px;
+}
+.nav-links{
+    display: flex;
+    outline: none;
+    gap: 25px;
+    padding-top: 21px;
+    padding-left: 0.7rem;
+    justify-content: center;
+    text-align: center;
+    transform: scale(1.2);
+}
+.nav-links a{
+    color: gray;
+    text-decoration: none;
+}
+.nav-links a:hover{
+    color: black;
+}
+#img{
+    width: 1.5rem;
+    height: 0.8rem;
+    visibility: hidden;
+}
+/* about 2 */
+
+/* end of about 2 */
+@media (max-width: 600px) {
+    #img2{
+        width: 5rem ;
+        margin-left: 40px;
+        padding-top: 5px;
+    }
+}
+@media (max-width: 990px) {
+    .nav{
+        width: 100%;
+    }
+    #img{
+        /* display: block; */
+    }
+    .nav-links{
+       display: flex;
+       align-items: flex-start;
+       flex-direction: column;
+       background-color: white;
+       width: 200px;
+       position: absolute;
+       z-index: 1;
+       left: 30%;
+       top: -20rem;
+       transition: .8s;
+    }
+    .nav-links a{
+        font-size: 13px;
+    }
+
+     #img{
+        visibility: visible;
+        position: absolute;
+        /* display: flex;
+        justify-content: flex-start; */
+        top: 1.4rem;
+        /*left: 25.8rem;*/
+        right: 1.2rem;
+        width: 2rem;
+        height: 1.2rem;
+        cursor: pointer;
+    }
+   #img:active{
+        opacity: 0.3;
+    }
+    #img2{
+        width: 3.7rem;
+        height: 45px;
+    }
+    .navimage img{
+        height: 5.9rem;
+    }
+}
+.container{
+       height: 80vh;
+       width: 100%;
+       background-image: url("images/banner-bg.png");
+      background-size: cover;
+      width: 100%;
+      height: 35rem;
+}
+.box{
+    border: 1px solid white;
+    background-color: white;
+    width: 29.5rem;
+    height: 28rem;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-top: -30rem;
+    margin-left: 7%;
+}
+.box h1{
+    font-size: 3.6rem;
+    padding: 15px;
+}
+.box p{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    padding-top: 14rem;
+    font-size: 1.2rem;
+    padding-left: 20px;
+}
+#btn a button{
+    /* display: flex;
+    align-items: center; */
+    margin-top: 19rem;
+    position: absolute;
+    margin-left: -24rem;
+    font-size: large;
+    cursor: pointer;
+    width: 9.9rem;
+    height: 2.9rem;
+    border-radius: 20px;
+    background-color: #13a25d;
+    color: white;
+}
+#btn1 a button{
+    /* display: flex;
+    align-items: center; */
+    margin-top: 19rem;
+    position: absolute;
+    margin-left: -12rem;
+    font-size: large;
+    cursor: pointer;
+    width: 9.9rem;
+    height: 2.9rem;
+    border-radius: 20px;
+    background-color: #090909;
+    color: white;
+}
+#btn1 a button:hover{
+    background-color: #13a25d;
+    color: white;
+    transition: .9s;
+}
+@media (max-width: 530px){
+    .container{
+        height: 80vh;
+        width: 100%;
+        background-image: url("images/banner-bg.png");
+       background-size: cover;
+       width: 31rem;
+       height: 28rem;
+       
+ }
+    .box{
+        width: 23rem;
+        height: 20rem;
+        margin-top: -20rem;
+        margin-left: 1.1rem;
+    }
+    .box h1{
+        font-size: 2.3rem;
+        padding: 10px;
+    }
+    .box p{
+        margin-top: -5.2rem;
+    }
+    #btn a button{
+        margin-top: 210px;
+        margin-left: -26rem;
+        width: 7.8rem;
+        height: 2.8rem;
+    }
+    #btn1 a button{
+        margin-top: 210px;
+        margin-left: -13rem;
+        width: 10rem;
+        height: 2.8rem;
+    }
+}
+.green{
+    height: 3.8rem;
+    width: 100%;
+    background-color: #13a25d;
+}
+@media (max-width: 516px) {
+    .green{
+        height: 3rem;
+        width: 100%;
+    }
+    
+}
+@media (max-width: 1600px){
+    .nav-links{
+        font-size: 1.2rem;
+    }
+    .box{
+        width: 29.5rem;
+    }
+    .box p{
+        font-size: 1.4rem;
+    }
+    #btn a button{
+        width: 10rem;
+        font-size: 1.4rem;
+    }
+     #btn1 a button{
+        font-size: 1.4rem;
+     }
+
+    
+}
+/* end of my home page */
+/* sevices page */
+
+/*body{
+    background-image: url(images/services-bg.png);
+    background-size: cover;
+    border: 1px solid red;
+    height: 100vh;
+
+}
+*/.services{
+   background-image: url(images/services-bg.png);
+   height: 104vh;
+   background-size: cover;
+}
+.services h1{
+ position: relative;
+ top: 7.8rem;
+ font-size: 2.7rem;
+ left: 15rem;
+}
+.services p{
+    position: relative;
+    font-size: 1.2rem;
+     top: 8.1rem;
+     left: 15rem;
+}
+.services span{
+    border: 1px solid black;
+    height: 12rem;
+    position: absolute;
+    left: 22rem;
+    top: -4rem;
+    transform: rotate(270deg);
+}
+.services .grid{
+    display: grid;
+    grid-template-columns: 24rem 24rem 24rem;
+    grid-template-rows: 16rem 16rem 16rem;
+    position: relative;
+     top: 12rem;
+     left: 15rem;
+}
+.services .grid p{
+    top: 1.2rem;
+    left: 0.2rem;
+    padding: 1px;
+}
+@media(max-width: 1570px){
+    .services{
+        height: 104vh;
+    }
+    .services h1{
+        position: relative;
+        left: 2rem;
+    }
+    .services p{
+        position: relative;
+        left: 2rem;        
+    }
+
+    .services span{
+      /*position: relative;*/
+       position: absolute;
+        left: 22rem;
+         transform: rotate(270deg);
+     }
+     .services .grid{
+        position: relative;
+        left: 2rem;  
+     }
+     .services .grid p{
+         position: relative;
+         left: 0.4rem; 
+     }
+}
+@media(max-width: 1320px){
+    .services .grid{
+        position: relative;
+        font-size: 1.1rem;
+        display: grid;
+        grid-template-columns: 20rem 20rem 20rem;
+        grid-template-rows: 16rem 16rem 16rem;  
+     }
+     .services .grid p{
+         position: relative;
+         font-size: 1.1rem; 
+     }
+}
+@media(max-width: 1160px){
+    .services{
+        height: 160vh;
+    }
+    .services .grid{
+        position: relative;
+        font-size: 1.1rem;
+        display: grid;
+        grid-template-columns: 25rem 25rem;
+        grid-template-rows: 16rem 16rem;  
+     }
+     .services .grid p{
+         position: relative;
+         font-size: 1.3rem; 
+     }
+}
+@media(max-width: 750px){
+    .services{
+        height: 250vh;
+    }
+    .services p{
+        left: 1rem;
+    }
+    .services .grid{
+        position: relative;
+        left: 10rem;
+        font-size: 1.3rem;
+        display: grid;
+        grid-template-columns: 35rem;
+        grid-template-rows: 15rem 15rem 15rem 15rem 15rem;  
+     }
+     .services .grid p{
+         position: relative;
+         font-size: 1.4rem; 
+     }
+}
+@media(max-width: 500px){
+    .services .grid{
+        position: relative;
+        left: 3rem;
+        font-size: 1.3rem;
+        display: grid;
+        grid-template-columns: 35rem;
+        grid-template-rows: 15rem 15rem 15rem 15rem 15rem;  
+     }
+     .services .grid p{
+         position: relative;
+         font-size: 1.4rem; 
+     }
+}
+
+.footer{
+    background-color: black;
+    height: 80vh;
+    display: grid;
+}
+#me{
+    color: white;
+    position: absolute;
+    left: 35rem;
+    top: 30rem;
+}
+
+.footer img{
+    position: relative;
+    left: 18rem;
+    top: 9.5rem;
+}
+.footer h3{
+   color: grey;
+   font-size: 1.2rem;
+    position: relative;
+    left: 19.5rem;
+    top: 8rem;
+}
+.footer h2{
+    font-size: 1.7rem;
+    color: white;
+     position: relative;
+    left: 14rem;
+    top: 11rem;
+}
+.footer p{
+    color: gray;
+    font-size: 1.2rem;
+     position: relative;
+    left: 14rem;
+    top: 13rem;
+}
+.footer{
+      display: grid;
+    grid-template-columns: 24rem 24rem 24rem;
+    grid-template-rows: 16rem 16rem 16rem;
+    position: relative;
+}
+@media(max-width: 1305px){
+    .footer img{
+         position: relative;
+         left: 4rem;
+    }
+    .footer h3{
+        position: relative;
+        left: 6rem;
+    }
+    .footer h2{
+        position: relative;
+        left: 2rem;
+    }
+    .footer p{
+        position: relative;
+        left: 2rem;
+    }
+    #me{
+        position: absolute;
+        left: 25rem;
+    }
+}
+@media(max-width: 1115px){
+    .footer{
+        height: 90vh;
+      display: grid;
+    grid-template-columns: 30rem 30rem;
+    grid-template-rows: 16rem 16rem;
+    position: relative;
+}
+ #me{
+        position: absolute;
+        top: 41rem;
+        left: 25rem;
+    }
+}
+
+@media(max-width: 825px){
+    .footer{
+        height: 90vh;
+      display: grid;
+    grid-template-columns: 24rem 24rem;
+    grid-template-rows: 16rem 16rem;
+    position: relative;
+}
+ #me{
+        position: absolute;
+        top: 41rem;
+        left: 20rem;
+    }
+}
+@media(max-width: 730px){
+    .footer{
+    height: 130vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 24rem;
+    grid-template-rows: 16rem 16rem;
+    /*position: relative;*/
+}
+    .footer img{
+         position: relative;
+         top: 10.4rem;
+         left: 15rem;
+    }
+    .footer h3{
+        position: relative;
+        font-size: 1.2rem;  
+        left: 17rem;
+        top: 9rem;
+    }
+    .footer h2{
+        position: relative;
+        font-size: 1.3rem;
+        left: 18rem;
+    }
+    .footer p{
+        position: relative;
+        left: 19rem;
+        font-size: 1.4rem;
+    }
+ #me{
+        position: absolute;
+        top: 59rem;
+        left: 12rem;
+    }
+
+}
+@media(max-width: 667px){
+     .footer img{
+         position: relative;
+         top: 10.4rem;
+         left: 5rem;
+    }
+    .footer h3{
+        position: relative; 
+        left: 6.1rem;
+        top: 9rem;
+    }
+    .footer h2{
+        position: relative;
+        left: 8rem;
+    }
+    .footer p{
+        position: relative;
+        left: 9rem;
+        font-size: 1.2rem;
+    }  
+    #me{
+        position: absolute;
+        top: 59rem;
+        left: 5rem;
+    }
+}
+
+    /*end of services */
+    /* blog */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: calibri;
+    width: 100vw;
+    overflow-x: hidden;
+}/*
+.all-parent{
+    border: 1px solid red;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    padding: 30px 10px;
+    z-index: 1;  
+}
+.parent{
+    border: 2px solid blue;
+}
+.text{
+    border: 3px solid green;
+}*/
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 8rem;
+    left: -17.5rem;
+}
+.parent img{
+    width: 35rem;
+}
+
+.all-parent{
+    height: 130vh;
+}
+.text h1{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: relative;
+    top: -14.5rem;
+    left: 17.5rem;
+    font-size: 2.5rem;
+}
+.text p{
+    display: flex;
+     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -13.5rem;
+    left: 20rem;
+    padding: 3px;
+    word-spacing: 3px;
+    font-size: 1.2rem;
+
+}
+.text a button{
+    width: 11rem;
+    height: 2.8rem;
+    background-color: black;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+    position: relative;
+    left: 75rem;
+    bottom: 16rem;
+}
+.text a button:hover{
+    background-color: #13a25d;
+}
+.text a button:active{
+    opacity: 0.6;
+}
+            @media (max-width: 1110px) {
+                .text p{
+                    font-size: 1.1rem;
+                    position: relative;
+                    left: 17rem;
+                }
+                
+            }
+@media (max-width: 1600px){
+    .nav{
+        overflow: hidden;
+    }
+    .all-parent{
+        overflow: hidden;
+    }
+    .nav-links{
+        font-size: 1.1rem;
+    }
+    .box{
+        width: 29.5rem;
+    }
+    .box p{
+        font-size: 1.4rem;
+    }
+    .text p{
+        font-size: 1.3rem;
+        position: relative;
+        left: 21rem;
+    }
+     .text a button{
+        width: 11rem;
+        top: -10rem;
+     }
+}
+@media (max-width: 16010px) {
+    .text a button{
+        top: -8rem;
+    }
+    
+}
+@media(max-width: 1305px){
+    .footer img{
+         position: relative;
+         left: 4rem;
+    }
+    .footer h3{
+        position: relative;
+        left: 6rem;
+    }
+    .footer h2{
+        position: relative;
+        left: 2rem;
+    }
+    .footer p{
+        position: relative;
+        left: 2rem;
+    }
+    #me{
+        position: absolute;
+        left: 25rem;
+    }
+}
+@media(max-width: 1115px){
+    .footer{
+        height: 90vh;
+      display: grid;
+    grid-template-columns: 30rem 30rem;
+    grid-template-rows: 16rem 16rem;
+    position: relative;
+}
+ #me{
+        position: absolute;
+        top: 41rem;
+        left: 25rem;
+    }
+}
+@media (max-width: 955px) {
+    .footer{
+        position: relative;
+        top: -7rem;
+    }
+    
+}
+@media(max-width: 825px){
+    .footer{
+        height: 90vh;
+      display: grid;
+    grid-template-columns: 24rem 24rem;
+    grid-template-rows: 16rem 16rem;
+    position: relative;
+}
+ #me{
+        position: absolute;
+        top: 41rem;
+        left: 20rem;
+    }
+}
+@media(max-width: 730px){
+    .footer{
+    height: 130vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 24rem;
+    grid-template-rows: 16rem 16rem;
+    /*position: relative;*/
+}
+    .footer img{
+         position: relative;
+         top: 10.4rem;
+         left: 15rem;
+    }
+    .footer h3{
+        position: relative;
+        font-size: 1.2rem;  
+        left: 17rem;
+        top: 9rem;
+    }
+    .footer h2{
+        position: relative;
+        font-size: 1.3rem;
+        left: 18rem;
+    }
+    .footer p{
+        position: relative;
+        left: 19rem;
+        font-size: 1.4rem;
+    }
+ #me{
+        position: absolute;
+        top: 59rem;
+        left: 12rem;
+    }
+
+}
+@media(max-width: 667px){
+     .footer img{
+         position: relative;
+         top: 10.4rem;
+         left: 5rem;
+    }
+    .footer h3{
+        position: relative; 
+        left: 6.1rem;
+        top: 9rem;
+    }
+    .footer h2{
+        position: relative;
+        left: 8rem;
+    }
+    .footer p{
+        position: relative;
+        left: 9rem;
+        font-size: 1.2rem;
+    }  
+    #me{
+        position: absolute;
+        top: 59rem;
+        left: 5rem;
+    }
+}
+
+
+
+/*@media (max-width :935px) {
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }*/
+   /* .text h1{
+        left: 11rem;
+        top: -5rem;
+       
+    }
+    .text p{
+        left: 1rem;
+        /*x*/
+         /* font-size: 1.3rem;
+    }
+    .parent img{
+        width: 25rem;
+        position: relative;
+        left: 2rem;
+    }   
+}
+@media (max-width :806px) {
+    .text{
+        position: relative;
+        top: 15rem;
+        right: 13rem;
+    }
+    .text h1{
+        top: -5rem;
+        font-size: 2.1rem;
+
+    }.text p{
+        top: -4rem;
+        font-size: 1rem;
+        left: 13rem;
+    }
+    .parent img{
+        left: 17rem;
+        min-width: 100px;
+    }
+    
+}
+@media (max-width :1240px) {
+    .text a button{
+        position: relative;
+        left: 42rem;
+    }
+    
+}
+@media (max-width: 981px) {
+    .text a button{
+        position: relative;
+        top: -7rem;
+    }
+}
+@media (max-width: 935px) {
+    .text a button{
+        position: relative;
+        top: -2rem;
+    }
+}
+@media (max-width: 833px) {
+    .text a button{
+        position: relative;
+        left: 25rem;
+        top: 2rem;
+    }
+}
+@media (max-width: 834px) {
+    .text a button{
+        position: relative;
+        top: -3rem;
+    }}
+    @media (max-width: 501px) {
+        .text a button{
+            position: relative;
+            left: 14rem;
+        }
+    }
+    @media (max-width: 488px) {
+        .text a button{
+            position: relative;
+            left: 14rem;
+        }}
+
+.footer{
+    height: 78vh;
+    background-color: #090909;
+    display: grid;
+    grid-template-columns: 330px 330px 1fr;
+	grid-template-rows: 200px 200px 1fr;
+}
+
+
+
+@media (max-width: 810px) {
+    .footer{
+        position: relative;
+        top: 15rem;
+    }}
+    
+
+ end of blog 
+*/
+@media(max-width: 1440px){
+    .text a button{
+        width: 11rem;
+        left: 68rem;
+     }
+}
+@media(max-width: 1280px){
+    .text p{
+        font-size: 1.15rem;
+        left: 19rem; 
+    }
+    .text a button{
+        left: 40rem;
+    }
+}
+@media(max-width: 1150px){
+    .parent img{
+        position: relative;
+        top: -2rem;
+        width: 30rem;
+    }
+    .text h1{
+        left: 13rem;
+    }
+     .text p{
+        left: 15rem; 
+    }
+     .text a button{
+        left: 34rem;
+    }
+
+}
+/*@media(max-width: 1020px){
+    .text h1{
+        top: 10rem;
+        left: -16rem;
+    }
+     .text p{
+        top: 12rem; 
+         left: -14rem;
+    }
+   
+   top: -131em;  .text a button{
+        top: 13.5rem;
+       
+       .text
+       left:5rem; p{
+    top: -10rem;
+       }
+    }
+*/
+@media(max-width: 1020px){
+    .nav #img2{
+        width: 6rem;
+    }
+    .parent img{
+        width: 27rem;
+    }
+     .text h1{
+        font-size: 1.4rem;
+        left: 5rem;
+        top: -11rem;
+        font-weight: 200px;
+     }
+     .text p{
+        left:   13rem;
+        top: -10rem;
+     }
+     .text a button{
+        top: -8rem;
+     }
+}
+@media(max-width: 953px){
+    .all-parent{
+        /* position: fixed; */
+        
+    }
+    .nav #img2{
+        width: 6rem;
+    }
+    #img{
+    cursor: pointer;
+}
+    .parent img{
+        width: 38rem;
+        left: 18rem;
+    }
+     .text h1{
+        font-size: 2.4rem;
+        left: -4rem;
+       top: 9rem;
+        font-weight: 300px;
+     }
+     .text p{
+        left: -1.5rem;
+        top: 10rem;
+     }
+     .text a button{
+        top: 10.3rem;
+         left: 10rem;
+     }
+}
+@media(max-width: 610px){
+    .all-parent{
+        overflow: hidden;
+    }
+    .nav #img2{
+        width: 6rem;
+    }
+    #img{
+    cursor: pointer;
+}
+    .parent img{
+        width: 30rem;
+        left: 18rem;
+    }
+     .text h1{
+        font-size: 2.4rem;
+        left: 1.2rem;
+       top: 9rem;
+        font-weight: 300px;
+     }
+     .text p{
+        left: 3.5rem;
+        top: 10rem;
+     }
+     .text a button{
+        top: 10.3rem;
+         left: 5rem;
+     }
+
+}
+@media(max-width: 530px){
+    #img{
+        cursor: pointer;
+    }
+}
+@media(max-width: 518px){
+    .all-parent{
+        overflow: hidden;
+    }
+    #img{
+    cursor: pointer;
+}
+    .nav #img2{
+        width: 6rem;
+    }
+    .parent img{
+        width: 25rem;
+        left: 18rem;
+    }
+     .text h1{
+        font-size: 2.4rem;
+        left: 0.5rem;
+       top: 9rem;
+        font-weight: 300px;
+     }
+     .text p{
+        left: 2.5rem;
+        top: 10rem;
+     }
+     .text a button{
+        top: 10.3rem;
+         left: 5rem;
+     }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*events*/
+body{
+    font-family: calibri;
+    overflow-x: hidden;
+}
+.head{
+       
+}
+.head h1{
+    position: relative;
+    top: 5rem;
+    font-size: 3rem;
+    left: 15rem;
+}
+.head img{
+    position: relative;
+    top: 7.5rem;
+    left: 8rem;
+    width: 60rem;
+    height: 20rem;
+}
+#img3{
+    position: absolute;
+    width: 6rem;
+    height: 6rem;
+    top: 25rem;
+    left: 40rem;
+    cursor: pointer;
+}
+ @media (max-width :1240px) {
+    .head img{
+        left: 1rem;
+     }}
+
+/*@media (max-width :1080px) {
+    #img3{
+        position: absolute;
+        left: 30rem;
+        cursor: pointer;
+    }
+    .head h1{
+        position: relative;
+        left: 1rem;
+    }
+    .head img{
+        position: relative;
+        left: 1rem;
+    }
+}
+*/
+@media(max-width: 1135px){
+    .head h1{
+        left: 2rem;
+    }
+     .head img{
+        width: 20rem;
+     }
+     #img3{
+        left: 35rem;
+     }
+}
+@media (max-width :1109px) {
+    #img3{
+        position: absolute;
+        left: 20rem;
+        cursor: pointer;
+    }
+    .head h1{
+        position: relative;
+        left: 5rem;
+    }
+    .head img{
+        width: 30rem;
+    }}
+
+@media (max-width :918px) {
+    .head img{
+        position: relative;
+        width: 17rem;
+    }
+    .head h1{
+            position: relative;
+            left: 1rem;
+            font-size: 2.5rem;
+        }
+    #img3{
+        top: 20rem;
+        left: 25rem;
+    }
+}
+@media (max-width :8010px) {
+    .head img{
+        position: relative;
+        width: 5rem;
+        height: 20rem;
+    }
+}
+@media (max-width :650px) {
+    .head img{
+        position: relative;
+        width: 1rem;
+        height: 20rem;
+    }
+    #img3{
+        top: 23rem;
+    }
+}
+@media (max-width :635px) {
+    .head img{
+        width: 5rem;
+    }}
+    @media (max-width :500px) {
+        #img3{
+            position: absolute;
+            left: 15rem;
+            top: 22rem;
+            cursor: pointer;
+        }
+        .head h1{
+            position: relative;
+            left: 1rem;
+            font-size: 2rem;
+        }
+        .head img{
+            width: 5rem;
+        }}/*
+end of events*/
+/*about*/
+.everything {
+    height: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.everything h1{
+    position: relative;
+    top: 3rem;
+    left: -31rem;
+    font-size: 3rem;
+}
+.everything span{
+    border: 1px solid black;
+    height: 12rem;
+    position: absolute;
+    left: 20rem;
+    top: -4rem;
+    transform: rotate(270deg);
+}
+
+.everything p{
+    position: relative;
+    left: -16rem;
+    top: 4rem;
+    font-size: 1.2rem;
+}
+.everything #words{
+     position: relative;
+    left: 20rem;
+    top: 12rem;
+    font-size: 1.2rem;
+}
+.everything a button{
+    width: 10rem;
+    height: 2.8rem;
+    font-size: 1.3rem;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    left: 25rem;
+    top: 17rem;
+}
+.everything a button:hover{
+    background-color:  #13a25d;
+}
+.everything img{
+    top: 1rem;
+    position: relative;
+    left: -19rem;
+}
+.border{
+    background-color: #13a25d;
+    top: 17rem;
+    z-index: -1;
+    left: 10rem;
+    width: 6rem;
+    height: 27.4rem;
+    position: absolute;
+}
+@media(max-width: 1547px){
+    .border{
+        position: absolute;
+        left: 2.6rem;
+    }
+    .everything h1{
+        position: absolute;
+        top: 9rem;
+        left: 4.5rem;
+    }
+    .everything span{
+        position: absolute;
+        left: 19rem;
+         transform: rotate(270deg);
+    }
+    .everything img{
+        position: absolute;
+        left: 5rem;
+        top: 19rem;
+    }
+    .everything #words{
+        position: absolute;
+        left: 45rem;
+        top: 24rem;
+    }
+    .everything p{
+        position: absolute;
+        left: 3rem;
+        top: 13.5rem;
+    }
+    .everything a button{
+        position: absolute;
+        left: 55rem;
+        top: 34rem;
+    }
+}
+@media(max-width: 1105px){
+     .everything img{
+        width: 35rem;
+    }
+    .border{
+        height: 25.3rem;
+    }
+    .everything #words{
+        left: 41rem;
+    }
+    .everything a button{
+        left: 45rem;
+    }
+}
+@media(max-width: 1000px){
+    .everything #words{
+        top: 45rem;
+        left: 5rem;
+    }
+    .everything a button{
+        top: 50rem;
+        left: 10rem;
+    }
+}
+@media(max-width: 670px){
+    .everything img{
+        width: 30rem;
+    }
+     .border{
+        height: 22.3rem;
+    }
+    .everything #words{
+        top: 42rem;
+    }
+    .everything a button{
+        top: 48rem;
+    }
+}
+@media(max-width: 645px){
+    .everything a button{
+        top: 50rem;
+    }
+}
+@media(max-width: 580px){
+    .everything h1{
+        left: 2.4rem;
+    }
+    .everything p{
+        left: 2.5rem;
+    }
+
+  .everything img{
+        left: 2.3rem;
+    }
+    .border{
+        left: 1rem;
+    }
+    .everything #words{
+        left: 2.3rem;
+    }
+    .everything a button{
+        left: 4rem;
+    }
+
+}
+@media(max-width: 538px){
+      .everything img{
+        width: 27rem;
+      }
+      .border{
+        height: 20.3rem;
+    }
+        .everything #words{
+        top: 39rem;
+    }
+    .everything a button{
+        top: 47rem;
+    }
+}
+@media (max-width: 1610px) {
+
+    .footer{
+       position: relative;
+       top: 5rem;
+   }
+}
+@media (max-width: 1350px) {
+
+     .footer{
+        position: relative;
+        top: 5rem;
+    }
+}
+@media(max-width: 1305px){
+    .footer{
+        position: relative;
+        top: 5rem;
+    }
+    .footer img{
+         position: relative;
+         left: 4rem;
+    }
+    .footer h3{
+        position: relative;
+        left: 6rem;
+    }
+    .footer h2{
+        position: relative;
+        left: 2rem;
+    }
+    .footer p{
+        position: relative;
+        left: 2rem;
+    }
+    #me{
+        position: absolute;
+        left: 25rem;
+    }
+}
+@media(max-width: 1115px){
+    .footer{
+        height: 90vh;
+      display: grid;
+    grid-template-columns: 30rem 30rem;
+    grid-template-rows: 16rem 16rem;
+    position: relative;
+}
+ #me{
+        position: absolute;
+        top: 41rem;
+        left: 25rem;
+    }
+}
+@media (max-width: 1001px) {
+    .footer{
+        position: relative;
+        top: 17rem;
+    }
+}
+@media (max-width: 955px) {
+    .footer{
+        position: relative;
+        top: 17rem;
+    }
+    
+}
+@media(max-width: 825px){
+    .footer{
+        height: 90vh;
+      display: grid;
+    grid-template-columns: 24rem 24rem;
+    grid-template-rows: 16rem 16rem;
+    position: relative;
+}
+ #me{
+        position: absolute;
+        top: 41rem;
+        left: 20rem;
+    }
+}
+@media(max-width: 730px){
+    .footer{
+    height: 130vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 24rem;
+    grid-template-rows: 16rem 16rem;
+    /*position: relative;*/
+}
+    .footer img{
+         position: relative;
+         top: 10.4rem;
+         left: 15rem;
+    }
+    .footer h3{
+        position: relative;
+        font-size: 1.2rem;  
+        left: 17rem;
+        top: 9rem;
+    }
+    .footer h2{
+        position: relative;
+        font-size: 1.3rem;
+        left: 18rem;
+    }
+    .footer p{
+        position: relative;
+        left: 19rem;
+        font-size: 1.4rem;
+    }
+ #me{
+        position: absolute;
+        top: 59rem;
+        left: 12rem;
+    }
+
+}
+@media(max-width: 667px){
+     .footer img{
+         position: relative;
+         top: 10.4rem;
+         left: 5rem;
+    }
+    .footer h3{
+        position: relative; 
+        left: 6.1rem;
+        top: 9rem;
+    }
+    .footer h2{
+        position: relative;
+        left: 8rem;
+    }
+    .footer p{
+        position: relative;
+        left: 9rem;
+        font-size: 1.2rem;
+    }  
+    #me{
+        position: absolute;
+        top: 59rem;
+        left: 5rem;
+    }
+}
+/*contact us*/
+.contact{
+    position: relative;
+    top: 2.5rem;
+    height: 105vh;
+    background-image: url(images/contact-bg.png);
+}
+.contact h1{
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    top: 7rem;
+    left: 15rem;
+}
+.contact span{
+     color: white;
+    border: 1px solid white;
+    height: 12rem;
+    position: absolute;
+    left: 23rem;
+    top: -4.1rem;
+    transform: rotate(270deg);
+}
+.contact p{
+    color: white;
+    position: relative;
+    top: 7.5rem;
+    left: 15rem;
+    font-size: 1.2rem;
+}
+.contact input{
+    height: 3.5rem;
+    font-size: 1.3rem;        
+    /*width: 15rem;*/
+}
+.contact #I1{
+    position: relative;
+    top: 10rem;
+    left: 15rem;
+    width: 25rem;
+}
+.contact #I2{
+    position: relative;
+    top: 16rem;
+    left: -10.2rem;
+    width: 25rem;
+}
+
+.contact #I3{
+    position: relative;
+    top: 22rem;
+    left: -35.5rem;
+    width: 25rem;
+}
+.contact #I4{
+    position: relative;
+    top: 25rem;
+    left: 15rem;
+    width: 25rem;
+    height: 8rem;
+}
+.contact a button{
+    cursor: pointer;
+    position: relative;
+    top: 32rem;
+    height: 3rem;
+    width: 7rem;
+    left: -7rem;
+    font-size: 1.3rem;
+    background-color: #13a25d;
+}
+.contact a button:hover{
+    background-color: whitesmoke;
+
+}
+@media(max-width: 1210px){
+    .contact{
+        position: relative;
+        top: 2.5rem;
+    }
+    .contact h1{
+        position: relative;
+        left: 3rem;
+    }
+    .contact p{
+        position: relative;
+        left: 3rem;
+    }
+    .contact span{
+        position: absolute;
+        left: 23rem;
+         transform: rotate(270deg);
+    } 
+
+     .contact #I1{
+            position: relative;
+            left: 3rem;
+     }   
+    .contact #I2{
+            position: relative;
+            left: -22.1rem;
+     }   
+    .contact #I3{
+            position: relative;
+            left: 3rem;
+            top: 16rem;
+     }   
+    .contact #I4{
+            position: relative;
+            left: -22rem;
+     }   
+    .contact a button{
+        position: relative;
+        left: -40rem;
+    }
+}
+@media(max-width: 990px){
+    .contact{
+        top: 6rem;
+    }
+}
+@media(max-width: 920px){
+    .contact a button{
+        position: absolute;
+        left: 5rem;
+        top: 43rem;
+    }
+}
+@media(max-width: 805px){
+     .contact #I2{
+        position: relative;
+        top: 13rem;
+        left: 3rem;
+     }
+     .contact #I4{
+        position: relative;
+        top: 19rem;
+        left: 3rem;
+     }
+
+}
+@media(max-width: 530px){
+    .contact span{
+         color: white;
+        border: 1px solid white;
+        transform: rotate(270deg);
+        position: absolute;
+        top: 0.5rem;
+        left: 20rem;
+        height: 4rem;
+    }
+}
+@media(max-width: 500px){
+    .contact h1{
+        left: 1rem;
+    }
+    .contact p{
+        left: 1rem;
+    }
+    .contact #I1{
+        left: 1rem;
+    }
+    .contact #I2{
+        left: 1rem;
+    }
+    .contact #I3{
+        left: 1rem;
+    }
+    .contact #I4{
+        left: 1rem;
+    }
+    .contact a button{
+        left: 2rem;
+    }
+}
